@@ -70,3 +70,34 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
+
+/* マウス */
+
+// 移動キーを押してからカーソルを移動するまでの遅延時間 ms
+#undef  MOUSEKEY_DELAY
+#define MOUSEKEY_DELAY 0
+
+// カーソルの速度が最大速度に達するまでの時間 ms
+// 加速をなくしたい場合は 0 にする
+#undef  MOUSEKEY_TIME_TO_MAX
+#define MOUSEKEY_TIME_TO_MAX 40
+
+// カーソルの描画の間隔 ms
+// 60FPS の場合は 16ms
+// MOUSEKEY_INTERVAL を下げるとカーソル速度が上がるのでその場合は MOUSEKEY_MAX_SPEED を下げる
+#undef  MOUSEKEY_INTERVAL
+#define MOUSEKEY_INTERVAL 16
+
+// カーソル移動の最高スピード
+#undef  MOUSEKEY_MAX_SPEED
+#define MOUSEKEY_MAX_SPEED 4
+
+#undef  MOUSEKEY_WHEEL_INTERVAL
+#define MOUSEKEY_WHEEL_INTERVAL 16
+
+// ホイールはすぐに最高速度になってほしい
+#undef  MOUSEKEY_WHEEL_TIME_TO_MAX
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 0
+
+#undef  MOUSEKEY_WHEEL_MAX_SPEED
+#define MOUSEKEY_WHEEL_MAX_SPEED 2
