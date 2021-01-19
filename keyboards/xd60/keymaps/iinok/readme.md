@@ -5,7 +5,7 @@
 ## コンパイル方法
 
 ```bash
-$ qmk compile -kb xd60/rev3 -km default
+$ qmk compile -kb xd60/rev3 -km iinok
 ```
 
 ## Firmware の Flash 方法
